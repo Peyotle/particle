@@ -1,0 +1,8 @@
+image: jekyll/builder:latest
+
+pipelines:
+  default:
+    - step:
+        script:
+          - gulp
+          - rsync -a _site/ oleg@$PRODUCTION_HOST:/var/www/olegchernyshenko.com/public_html --exclude=bitbucket-pipelines.yml --exclude=deploy --exclude=Vagrantfile --chown=www-data:www-data
