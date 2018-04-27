@@ -6,5 +6,5 @@ pipelines:
         script:
           - npm install
           - npm install -g gulp
-          - gulp
+          - gulp build
           - rsync -a _site/ oleg@$PRODUCTION_HOST:/var/www/olegchernyshenko.com/public_html --exclude=bitbucket-pipelines.yml --exclude=deploy --exclude=Vagrantfile --chown=www-data:www-data
