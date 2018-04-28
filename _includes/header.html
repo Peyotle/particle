@@ -1,15 +1,25 @@
 <div id="particles-js">
   <div class="header">
       <h1>
-        <span class="site-title">{{site.username}}</span>
-        <span class="site-description">{{site.user_title}}</span>
+        <span class="site-title">{{site.author.username}}</span>
+        <span class="site-description">{{site.author.user_title}}</span>
       </h1>
       <div class="header-icons">
-        <a aria-label="Send email" href="#"><i class="icon fa fa-envelope"></i></a>
-        <a aria-label="My YouTube" target="_blank" href="#"><i class="icon fa fa-youtube" aria-hidden="true"></i></a>
-        <a aria-label="My Twitter" target="_blank" href="#"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
-        <a aria-label="My LinkedIn" target="_blank" href="#"><i class="icon fa fa-linkedin" aria-hidden="true"></i></a>
-        <a aria-label="My Github" target="_blank" href="#"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
+        {% if site.author.email %}
+          <a aria-label="Send email" target="_blank" href="mailto:{{ site.author.mail }}"><i class="icon fa fa-envelope"></i></a>
+        {% endif %}
+        {% if site.author.youtube %}
+          <a aria-label="My YouTube" target="_blank" href="https://youtube.com/{{ site.author.youtube }}"><i class="icon fa fa-youtube" aria-hidden="true"></i></a>
+        {% endif %}
+        {% if site.author.twitter %}
+          <a aria-label="My Twitter" target="_blank" href="https://twitter.com/{{ site.author.twitter }}"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
+        {% endif %}
+        {% if site.author.linkedin %}
+          <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/{{ site.author.linkedin }}"><i class="icon fa fa-linkedin" aria-hidden="true"></i></a>
+        {% endif %}
+        {% if site.author.github %}
+          <a aria-label="My Github" target="_blank" href="https://github.com/{{ site.author.github }}"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
+        {% endif %}
       </div>
       <div class="header-links">
         <a class="link" href="#about" data-scroll>About Me</a>
