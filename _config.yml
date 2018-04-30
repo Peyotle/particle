@@ -2,7 +2,7 @@
 title: Mobile app development
 description: Mobile app development in Christchurch, New Zealand
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
-# url: "localhost:3000" # the base hostname & protocol for your site e.g.
+url: 'https://olegchernyshenko.com' # the base hostname & protocol for your site e.g.
 
 # User settings
 author:
@@ -17,7 +17,7 @@ author:
   twitter: olegcode
   github:  Peyotle
   linkedin: chernyshenko
-  youtube: channel/UCr3QUqbwdiKaSQ_W_2feYbQ
+  youtube: TheSmellOfCode
 
 digital-ocean-referral: 'https://m.do.co/c/58ba5afc4659'
 # Google-analytics
