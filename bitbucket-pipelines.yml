@@ -5,6 +5,7 @@ pipelines:
     - step:
         script:
           - npm install
+          - npm config set unsafe-perm true
           - bundle install
           - npm install -g gulp
           - gulp build
