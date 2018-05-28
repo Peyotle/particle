@@ -1,7 +1,7 @@
 # Site settings
 title: Mobile app development
 description: Mobile app development in Christchurch, New Zealand
-# baseurl: "/particle" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: 'https://olegchernyshenko.com' # the base hostname & protocol for your site e.g.
 
 # User settings
@@ -23,5 +23,8 @@ digital-ocean-referral: 'https://m.do.co/c/58ba5afc4659'
 # Google-analytics
 google-analytics:
   id: "UA-105774958-1"
+
+plugins:
+  - jekyll-sitemap
 
 exclude: ['package.json', 'src' , 'node_modules']
