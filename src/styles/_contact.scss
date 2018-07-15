@@ -1,0 +1,65 @@
+#contact {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+#contact-form {
+  margin: 20px auto;
+  max-width: 960px;
+  ul {
+    padding-left: 0;
+  }
+  /* Style inputs with type="text", select elements and textareas */
+  input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  input[type]:not([type=text]) {
+    display: block;
+    width: 130px;
+    margin: 10px 0px;
+    padding: 5px;
+    background-color: transparent;
+    border: 1px solid $main;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    
+    &:hover {
+      color: #fff;
+      transition: color 0.3s ease-in,
+      background-color 0.3s ease-in,
+      border-color 0.3s ease-in;
+    }
+  }
+  
+  input[type=submit] {
+    
+    &:hover {
+      background-color: $purple;
+      border-color: $purple;
+    }
+  }
+  
+  input[type=reset] {
+    
+    &:hover {
+      background-color: $warn;
+      border-color: $warn;
+    }
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+}
